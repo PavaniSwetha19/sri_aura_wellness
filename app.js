@@ -235,13 +235,21 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         body: {
-            subcategories: ["Swedish", "Deep Tissue", "Aromatherapy", "Hot Stone", "Body Scrub"],
+            subcategories: ["Body Massages", "Foot Therapy", "Body Treatments"],
             services: [
-                { name: "Swedish Massage", category: "Swedish", price: 1500, desc: "Gentle full body relaxation massage (60 mins)" },
-                { name: "Deep Tissue Massage", category: "Deep Tissue", price: 2000, desc: "Muscle tension relief massage (60 mins)" },
-                { name: "Aromatherapy Massage", category: "Aromatherapy", price: 1800, desc: "Balancing massage with lavender oils (60 mins)" },
-                { name: "Hot Stone Therapy", category: "Hot Stone", price: 2400, desc: "Heated basalt stone therapy (75 mins)" },
-                { name: "Lavender Body Scrub & Polish", category: "Body Scrub", price: 1800, desc: "Deep exfoliating salt scrub (60 mins)" }
+                { name: "Swedish Massage (60 min)", category: "Body Massages", price: 1999, desc: "Gentle full body relaxation massage" },
+                { name: "Swedish Massage (90 min)", category: "Body Massages", price: 2799, desc: "Gentle full body relaxation massage" },
+                { name: "Deep Tissue Massage (60 min)", category: "Body Massages", price: 2499, desc: "Muscle tension relief massage" },
+                { name: "Deep Tissue Massage (90 min)", category: "Body Massages", price: 3299, desc: "Muscle tension relief massage" },
+                { name: "Balinese Massage (60 min)", category: "Body Massages", price: 2299, desc: "Traditional gentle stretching & acupressure" },
+                { name: "Balinese Massage (90 min)", category: "Body Massages", price: 3099, desc: "Traditional gentle stretching & acupressure" },
+                { name: "Aroma Therapy Massage (60 min)", category: "Body Massages", price: 2299, desc: "Balancing massage with essential aroma oils" },
+                { name: "Aroma Therapy Massage (90 min)", category: "Body Massages", price: 3099, desc: "Balancing massage with essential aroma oils" },
+                { name: "Foot Reflexology (30 min)", category: "Foot Therapy", price: 999, desc: "Soothing pressure point foot massage" },
+                { name: "Foot Reflexology (60 min)", category: "Foot Therapy", price: 1699, desc: "Soothing pressure point foot massage" },
+                { name: "Body Scrub (45 min)", category: "Body Treatments", price: 1499, desc: "Exfoliating salt body scrub" },
+                { name: "Body Polish (60 min)", category: "Body Treatments", price: 2499, desc: "Nourishing and hydrating body polish" },
+                { name: "Body Wrap (60 min)", category: "Body Treatments", price: 2799, desc: "Moisturizing and detoxifying body wrap" }
             ]
         },
         makeup: {
@@ -254,9 +262,11 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         packages: {
-            subcategories: ["Bridal Combo", "Wellness Spa Package", "Weekend Salon Combo"],
+            subcategories: ["Bridal Combo", "Luxury Spa Packages", "Weekend Salon Combo"],
             services: [
-                { name: "Sri Aura Signature Combo", category: "Wellness Spa Package", price: 3000, desc: "Scrub + Massage + Steam Bath (90 mins)" },
+                { name: "Relax Package (Massage + Foot Therapy - 90 min)", category: "Luxury Spa Packages", price: 2999, desc: "Therapeutic massage combined with foot reflexology" },
+                { name: "Signature Spa Package (120 min)", category: "Luxury Spa Packages", price: 4499, desc: "Premium signature spa rejuvenation therapy" },
+                { name: "Royal Luxury Package (180 min)", category: "Luxury Spa Packages", price: 6999, desc: "Ultimate royal full-body luxury pampering session" },
                 { name: "Bridal Wellness Glow Package", category: "Bridal Combo", price: 8000, desc: "Gold facial + body scrub + hair spa" },
                 { name: "Weekend Revitalizing Combo", category: "Weekend Salon Combo", price: 2500, desc: "Haircut + facial + pedicure" }
             ]
