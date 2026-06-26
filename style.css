@@ -2212,7 +2212,7 @@ h1, h2, h3, h4, .section-title {
     align-items: center;
     flex-wrap: wrap;
     gap: 12px;
-    max-width: 680px;
+    max-width: 1150px;
     margin: 0 auto 40px auto;
     background-color: #FAF8FC;
     border: 1px solid var(--border-color);
