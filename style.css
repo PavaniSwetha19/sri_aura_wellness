@@ -272,14 +272,17 @@ h1, h2, h3, h4, .section-title {
     gap: 12px;
 }
 
-.spa-logo-svg {
+.spa-logo-svg,
+.spa-logo-img {
     height: 60px;
     width: 60px;
+    object-fit: contain;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
     transition: var(--transition);
 }
 
-.main-header.scrolled .spa-logo-svg {
+.main-header.scrolled .spa-logo-svg,
+.main-header.scrolled .spa-logo-img {
     height: 52px;
     width: 52px;
 }
@@ -1131,9 +1134,11 @@ h1, h2, h3, h4, .section-title {
     gap: 12px;
 }
 
-.footer-logo-svg {
+.footer-logo-svg,
+.footer-logo-img {
     height: 60px;
     width: 60px;
+    object-fit: contain;
 }
 
 .footer-desc {
@@ -1368,7 +1373,8 @@ h1, h2, h3, h4, .section-title {
         height: 80px;
     }
     
-    .spa-logo-svg {
+    .spa-logo-svg,
+    .spa-logo-img {
         height: 50px;
         width: 50px;
     }
