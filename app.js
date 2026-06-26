@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "Global Hair Coloring", category: "Hair Coloring", price: 600, desc: "Ammonia-free global color" },
                 { name: "Hair Highlights", category: "Hair Coloring", price: 1000, desc: "Streaks coloring" },
                 { name: "Luxury Hair Wash", category: "Hair Wash", price: 150, desc: "Includes conditioning and blow dry" },
-                { name: "Organic Head Massage", category: "Head Massage", price: 250, desc: "With warm coconut oil (20 mins)" },
+                { name: "Organic Head Massage", category: "Head Massage", duration: "20 min", price: 250, desc: "With warm coconut oil" },
                 { name: "Anti-Dandruff Treatment", category: "Hair Treatments", price: 800, desc: "Removes scalp build-up" },
                 { name: "Hair Straightening", category: "Hair Straightening", price: 2500, desc: "Permanent sleek look" },
                 { name: "Full Face Waxing", category: "Waxing", price: 300, desc: "Gentle wax hair removal" },
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "Hairstyling", category: "Hair Cut & Styling", price: "2000+", desc: "Premium styling for special events" },
                 { name: "Global Coloring", category: "Hair Coloring", price: 2500, desc: "Rich ammonia-free global color" },
                 { name: "Luxury Hair Wash", category: "Hair Wash", price: 200, desc: "Nourishing shampoo and conditioning" },
-                { name: "Relaxing Head Massage", category: "Head Massage", price: 300, desc: "With essential oils (25 mins)" },
+                { name: "Relaxing Head Massage", category: "Head Massage", duration: "25 min", price: 300, desc: "With essential oils" },
                 { name: "Premium Streaks / Highlights", category: "Highlights / Streaking", price: 3000, desc: "Stunning fashion shades" },
                 { name: "Anti-Frizz Treatment", category: "Hair Treatments", price: 1500, desc: "Smoothes cuticles" },
                 { name: "Keratin Smooth Therapy", category: "Keratin Treatment", price: 4000, desc: "Keratin protein restructuring" }
@@ -235,21 +235,28 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         body: {
-            subcategories: ["Body Massages", "Foot Therapy", "Body Treatments"],
+            subcategories: ["Body Massages", "Foot Therapy", "Body Treatments", "Spa Packages"],
             services: [
-                { name: "Swedish Massage (60 min)", category: "Body Massages", price: 1999, desc: "Gentle full body relaxation massage" },
-                { name: "Swedish Massage (90 min)", category: "Body Massages", price: 2799, desc: "Gentle full body relaxation massage" },
-                { name: "Deep Tissue Massage (60 min)", category: "Body Massages", price: 2499, desc: "Muscle tension relief massage" },
-                { name: "Deep Tissue Massage (90 min)", category: "Body Massages", price: 3299, desc: "Muscle tension relief massage" },
-                { name: "Balinese Massage (60 min)", category: "Body Massages", price: 2299, desc: "Traditional gentle stretching & acupressure" },
-                { name: "Balinese Massage (90 min)", category: "Body Massages", price: 3099, desc: "Traditional gentle stretching & acupressure" },
-                { name: "Aroma Therapy Massage (60 min)", category: "Body Massages", price: 2299, desc: "Balancing massage with essential aroma oils" },
-                { name: "Aroma Therapy Massage (90 min)", category: "Body Massages", price: 3099, desc: "Balancing massage with essential aroma oils" },
-                { name: "Foot Reflexology (30 min)", category: "Foot Therapy", price: 999, desc: "Soothing pressure point foot massage" },
-                { name: "Foot Reflexology (60 min)", category: "Foot Therapy", price: 1699, desc: "Soothing pressure point foot massage" },
-                { name: "Body Scrub (45 min)", category: "Body Treatments", price: 1499, desc: "Exfoliating salt body scrub" },
-                { name: "Body Polish (60 min)", category: "Body Treatments", price: 2499, desc: "Nourishing and hydrating body polish" },
-                { name: "Body Wrap (60 min)", category: "Body Treatments", price: 2799, desc: "Moisturizing and detoxifying body wrap" }
+                // Body Massages
+                { name: "Swedish Massage", category: "Body Massages", duration: "60 min", price: 1999, desc: "Gentle full body relaxation massage" },
+                { name: "Swedish Massage", category: "Body Massages", duration: "90 min", price: 2799, desc: "Gentle full body relaxation massage" },
+                { name: "Deep Tissue Massage", category: "Body Massages", duration: "60 min", price: 2499, desc: "Muscle tension relief massage" },
+                { name: "Deep Tissue Massage", category: "Body Massages", duration: "90 min", price: 3299, desc: "Muscle tension relief massage" },
+                { name: "Balinese Massage", category: "Body Massages", duration: "60 min", price: 2299, desc: "Traditional gentle stretching & acupressure" },
+                { name: "Balinese Massage", category: "Body Massages", duration: "90 min", price: 3099, desc: "Traditional gentle stretching & acupressure" },
+                { name: "Aroma Therapy Massage", category: "Body Massages", duration: "60 min", price: 2299, desc: "Balancing massage with essential aroma oils" },
+                { name: "Aroma Therapy Massage", category: "Body Massages", duration: "90 min", price: 3099, desc: "Balancing massage with essential aroma oils" },
+                // Foot Therapy
+                { name: "Foot Reflexology", category: "Foot Therapy", duration: "30 min", price: 999, desc: "Soothing pressure point foot massage" },
+                { name: "Foot Reflexology", category: "Foot Therapy", duration: "60 min", price: 1699, desc: "Soothing pressure point foot massage" },
+                // Body Treatments
+                { name: "Body Scrub", category: "Body Treatments", duration: "45 min", price: 1499, desc: "Exfoliating salt body scrub" },
+                { name: "Body Polish", category: "Body Treatments", duration: "60 min", price: 2499, desc: "Nourishing and hydrating body polish" },
+                { name: "Body Wrap", category: "Body Treatments", duration: "60 min", price: 2799, desc: "Moisturizing and detoxifying body wrap" },
+                // Spa Packages
+                { name: "Relax Package (Massage + Foot Therapy)", category: "Spa Packages", duration: "90 min", price: 2999, desc: "Therapeutic massage combined with foot reflexology" },
+                { name: "Signature Spa Package", category: "Spa Packages", duration: "120 min", price: 4499, desc: "Premium signature spa rejuvenation therapy" },
+                { name: "Royal Luxury Package", category: "Spa Packages", duration: "180 min", price: 6999, desc: "Ultimate royal full-body luxury pampering session" }
             ]
         },
         makeup: {
@@ -264,9 +271,9 @@ document.addEventListener('DOMContentLoaded', () => {
         packages: {
             subcategories: ["Bridal Combo", "Luxury Spa Packages", "Weekend Salon Combo"],
             services: [
-                { name: "Relax Package (Massage + Foot Therapy - 90 min)", category: "Luxury Spa Packages", price: 2999, desc: "Therapeutic massage combined with foot reflexology" },
-                { name: "Signature Spa Package (120 min)", category: "Luxury Spa Packages", price: 4499, desc: "Premium signature spa rejuvenation therapy" },
-                { name: "Royal Luxury Package (180 min)", category: "Luxury Spa Packages", price: 6999, desc: "Ultimate royal full-body luxury pampering session" },
+                { name: "Relax Package (Massage + Foot Therapy)", category: "Luxury Spa Packages", duration: "90 min", price: 2999, desc: "Therapeutic massage combined with foot reflexology" },
+                { name: "Signature Spa Package", category: "Luxury Spa Packages", duration: "120 min", price: 4499, desc: "Premium signature spa rejuvenation therapy" },
+                { name: "Royal Luxury Package", category: "Luxury Spa Packages", duration: "180 min", price: 6999, desc: "Ultimate royal full-body luxury pampering session" },
                 { name: "Bridal Wellness Glow Package", category: "Bridal Combo", price: 8000, desc: "Gold facial + body scrub + hair spa" },
                 { name: "Weekend Revitalizing Combo", category: "Weekend Salon Combo", price: 2500, desc: "Haircut + facial + pedicure" }
             ]
@@ -349,9 +356,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     const waText = encodeURIComponent(`Hi Sri Aura Wellness, I want to book the service: ${item.name} (Price: ₹${item.price}).`);
                     
+                    const durationText = item.duration ? ` (${item.duration})` : '';
                     row.innerHTML = `
                         <div class="result-title-wrapper">
-                            <h4 class="result-title">${item.name}</h4>
+                            <h4 class="result-title">${item.name}${durationText}</h4>
                             <div class="result-leader"></div>
                         </div>
                         <div class="price-book-group">
